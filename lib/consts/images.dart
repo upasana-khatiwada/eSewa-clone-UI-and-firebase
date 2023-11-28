@@ -62,3 +62,47 @@ const  icunduhicon = "assets/icons/unduhicon.png";
 const  icVotingEvents = "assets/icons/Voting&Events.png";
 const  icwallet = "assets/icons/wallet.png";
 const  icwhitetick = "assets/icons/white_tick.png";
+
+
+
+//images 
+const imgDaraz= "assets/images/daraz.png";
+const imgDishHome= "assets/images/dish-home.png";
+const imgeSewaDark= "assets/images/esewa-dark.png";
+const imgeSewaLight= "assets/images/esewa-light.png";
+const imgeSewa= "assets/images/esewa.jpg";
+const imgESewa= "assets/images/esewa.png";
+const imgeSewa1= "assets/images/esewa1.png";
+const imgfbLogo = "assets/images/facebook_logo.png";
+const imgfinancialServices = "assets/images/Financial_Services.jpeg";
+const imgFonePay = "assets/images/fonepay.png";
+const imgGoogle = "assets/images/google_logo.png";
+const imgHealth = "assets/images/Health.jpg";
+const imgMessenger = "assets/images/messenger.jpg";
+const imgMidas = "assets/images/midas.png";
+const imgNepalNursing = "assets/images/nepal_nursing.jpg";
+const imgNepalGov = "assets/images/nepalGov_logo.jpg";
+const imgNTC = "assets/images/ntc.jpg";
+const imgeSewaCare = "assets/images/eSewaCare.jpg";
+const imgNotice = "assets/images/notice.jpg";
+const imgRastriyaBeema = "assets/images/rastriya_beema.png";
+const imgS1 = "assets/images/s1.jpg";
+const imgS2 = "assets/images/s2.jpg";
+const imgS3 = "assets/images/s3.jpg";
+const imgS4 = "assets/images/s4.jpg";
+const imgSimTv = "assets/images/simtv.png";
+const imgSlider1 = "assets/images/slider_1.jpg";
+const imgSlider2 = "assets/images/slider_2.jpg";
+const imgSlider3 = "assets/images/slider_3.jpg";
+const imgSlider4 = "assets/images/slider_4.jpg";
+const imgSmallAd1 = "assets/images/smallAd1.jpg";
+const imgSmallAd2 = "assets/images/smallAd2.jpg";
+const imgSSF = "assets/images/ssf.jpg";
+const imgStandardCharter = "assets/images/standard_charter.jpg";
+const imgThirdpartyInsurance = "assets/images/Thirdparty_insurance.jpg";
+const imgTraffic = "assets/images/traffic.jpg";
+const imgTwitterLogo = "assets/images/twitter_logo.png";
+const imgUpasana = "assets/images/upasana.jpg";
+const imgViber = "assets/images/viber.jpg";
+const imgVolkswagen = "assets/images/volkswagen.jpg";
+const imgWhatsapp = "assets/images/whatsapp.jpg";
