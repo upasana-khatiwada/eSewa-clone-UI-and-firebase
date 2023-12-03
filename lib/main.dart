@@ -1,6 +1,6 @@
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/strings.dart';
-import 'package:esewa_clone/splash_screen.dart';
+import 'package:esewa_clone/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
