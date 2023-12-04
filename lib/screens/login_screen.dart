@@ -1,3 +1,4 @@
+import 'package:esewa_clone/components/automatic_slideshow.dart';
 import 'package:esewa_clone/components/balance_container.dart';
 import 'package:esewa_clone/components/main_container.dart';
 import 'package:esewa_clone/components/my_appbar.dart';
@@ -45,9 +46,9 @@ class LoginScreen extends StatelessWidget {
                 10.heightBox,
                 //Main Container having icons
                 Container(
-                  padding: const EdgeInsets.only(top: 8),
-                  color: Colors.blue,
-                  height: 550,
+                  padding: const EdgeInsets.only(top: 5),
+                 // color: Colors.blue,
+                  // height: 700,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.grey[900]),
@@ -56,7 +57,10 @@ class LoginScreen extends StatelessWidget {
                           MainContainer(),
                         ],
                       ),
-                )
+                ),
+                10.heightBox,
+                const AutomaticCarousel(),
+                10.heightBox,
               ],
             ),
           ),

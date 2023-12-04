@@ -9,24 +9,30 @@ class MyIcons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Image.asset(
-            image,
-            width: 30,
-            fit: BoxFit.contain,
-            color: whiteColor,
-          ),
+    return Align(
+      alignment: Alignment.center,
+      child: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Image.asset(
+                image,
+                width: 30,
+                fit: BoxFit.contain,
+                color: const Color.fromARGB(255, 69, 175, 72),
+                
+              ),
+            ),
+            8.heightBox,
+            Align(
+                alignment: Alignment.center,
+                child: title.text.size(12).color(whiteColor).make()),
+            8.heightBox,
+          ],
         ),
-        5.heightBox,
-        Align(
-            alignment: Alignment.center,
-            child: title.text.color(whiteColor).make()),
-        10.heightBox,
-      ],
+      ),
     );
   }
 }

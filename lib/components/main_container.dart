@@ -15,13 +15,13 @@ class MainContainer extends StatelessWidget {
     [icIntlAirlines, "Intl Airlines"],
     [icRequestMoney, "Request\nMoney"],
     [icHotels, "Hotels"],
-    [icGovtPayment, "Govt\nPayment"],
+    [icGovtPayment, "   Govt\nPayment"],
     [icCableCar, "Cable Car"],
     [icSahakariDeposit, "Sahakari\nDeposit"],
     [icTV, "TV"],
-    [icCollegeFee, "Education\nFee"],
+    [icCollegeFee, "Education\n     Fee"],
     [icinsurance, "Insurance"],
-    [icatm, "ATM\nWithdraw"],
+    [icatm, "    ATM\n Withdraw"],
     [icFinancialServices, "Financial\nServices"],
     [icHealth, "Health"],
     [icBusTicket, "Bus Ticket"],
@@ -35,14 +35,19 @@ class MainContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-      height: MediaQuery.of(context).size.height / 1.57,
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
+      height: MediaQuery.of(context).size.height / 1.3,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15), color: Colors.grey[900]),
-          child: GridView.builder(gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4), itemBuilder: (BuildContext context,  index){
+      child: GridView.builder(
+          physics: const NeverScrollableScrollPhysics(),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 4,
+          ),
+          itemCount: iconList.length,
+          itemBuilder: (BuildContext context, index) {
             return MyIcons(
-              image: iconList[index][0],
-              title: iconList[index][1]);
+                image: iconList[index][0], title: iconList[index][1]);
           }),
     );
   }
