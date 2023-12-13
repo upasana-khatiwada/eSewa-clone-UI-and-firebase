@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class MyIcons extends StatelessWidget {
-  final image;
+  final String image;
   final String title;
-  const MyIcons({super.key, this.image, required this.title});
+  const MyIcons({super.key, required this.image, required this.title});
 
   @override
   Widget build(BuildContext context) {

@@ -9,3 +9,4 @@ const Color textfieldGrey = Color.fromRGBO(209, 209, 209, 1);
 const Color fontGrey = Color.fromRGBO(107, 115, 119, 1);
 const Color darkFontGrey = Color.fromRGBO(62, 68, 71, 1);
 const Color bottonColor = Color(0xFF114b00);
+const Color containerColor = Color.fromRGBO(6, 34, 48, 1);

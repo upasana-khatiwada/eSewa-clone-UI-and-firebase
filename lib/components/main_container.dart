@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class MainContainer extends StatelessWidget {
   MainContainer({super.key});
 
-  List iconList = [
+  final List iconList = [
     [icTopup, "Topup"],
     [icElectricity, "Electricity"],
     [icKhanepani, "Khanepani"],

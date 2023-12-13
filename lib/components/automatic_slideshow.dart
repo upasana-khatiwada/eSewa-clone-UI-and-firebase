@@ -2,7 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/images.dart';
 import 'package:flutter/material.dart';
-import 'package:velocity_x/velocity_x.dart';
+
 
 class AutomaticCarousel extends StatefulWidget {
   const AutomaticCarousel({super.key});

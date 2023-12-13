@@ -2,6 +2,8 @@ import 'package:esewa_clone/components/automatic_slideshow.dart';
 import 'package:esewa_clone/components/balance_container.dart';
 import 'package:esewa_clone/components/main_container.dart';
 import 'package:esewa_clone/components/my_appbar.dart';
+import 'package:esewa_clone/components/slider2.dart';
+import 'package:esewa_clone/screens/services_container.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -61,6 +63,9 @@ class LoginScreen extends StatelessWidget {
                 10.heightBox,
                 const AutomaticCarousel(),
                 10.heightBox,
+                const ServicesContainer(title: "Popular Services",),
+                10.heightBox,
+                const AutomaticCarousel2(),
               ],
             ),
           ),
