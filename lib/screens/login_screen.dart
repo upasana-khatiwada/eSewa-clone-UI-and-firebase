@@ -76,6 +76,7 @@ class LoginScreen extends StatelessWidget {
                   servicesList: insurance,
                 ),
                 AutomaticCarousel2(sliderList: smallAd),
+                //listview tile 
               ],
             ),
           ),
