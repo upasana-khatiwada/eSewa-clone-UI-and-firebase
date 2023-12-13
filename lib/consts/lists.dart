@@ -22,3 +22,7 @@ final List slider = [
   imgSlider3,
   imgSlider4,
 ];
+
+final List smallAd = [
+imgSmallAd1,imgSmallAd2
+];

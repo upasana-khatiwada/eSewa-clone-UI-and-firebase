@@ -1,9 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:esewa_clone/consts/lists.dart';
 import 'package:flutter/material.dart';
 
 class AutomaticCarousel2 extends StatefulWidget {
-  const AutomaticCarousel2({super.key});
+  final List<dynamic> sliderList;
+  const AutomaticCarousel2({super.key, required this.sliderList});
 
   @override
   State<AutomaticCarousel2> createState() => _AutomaticCarousel2State();
@@ -13,23 +13,28 @@ class _AutomaticCarousel2State extends State<AutomaticCarousel2> {
   @override
   Widget build(BuildContext context) {
     final double width = MediaQuery.of(context).size.width;
+     final double screenHeight = MediaQuery.of(context).size.height;
+
+    // Define a percentage of the screen height for the image
+    const double imageHeightPercentage = 0.3; 
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: CarouselSlider.builder(
-        itemCount: slider.length,
+        itemCount:  widget.sliderList.length,
         itemBuilder: (BuildContext context, int index, int realIndex) {
           return Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(18.0),
                   child: Image.asset(
-                    slider[index],
+                     widget.sliderList[index],
                     fit: BoxFit.fill,
                     width: width,
-                     height: 210.0,
+                     height: screenHeight * imageHeightPercentage,
                   ),
                 ),
               )
@@ -43,6 +48,7 @@ class _AutomaticCarousel2State extends State<AutomaticCarousel2> {
           autoPlay: true,
           autoPlayInterval: const Duration(seconds: 3),
           autoPlayAnimationDuration: const Duration(milliseconds: 800),
+          aspectRatio: 2.0,
         ),
       ),
     );

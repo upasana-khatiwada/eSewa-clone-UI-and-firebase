@@ -1,5 +1,5 @@
 import 'package:esewa_clone/consts/images.dart';
-import 'package:esewa_clone/components/my_icons.dart';
+import 'package:esewa_clone/dashboard_containers/my_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 

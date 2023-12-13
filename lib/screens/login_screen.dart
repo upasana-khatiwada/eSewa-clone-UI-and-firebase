@@ -1,9 +1,10 @@
 import 'package:esewa_clone/components/automatic_slideshow.dart';
-import 'package:esewa_clone/components/balance_container.dart';
-import 'package:esewa_clone/components/main_container.dart';
-import 'package:esewa_clone/components/my_appbar.dart';
+import 'package:esewa_clone/dashboard_containers/balance_container.dart';
+import 'package:esewa_clone/dashboard_containers/main_container.dart';
+import 'package:esewa_clone/dashboard_containers/my_appbar.dart';
 import 'package:esewa_clone/components/slider2.dart';
-import 'package:esewa_clone/screens/services_container.dart';
+import 'package:esewa_clone/consts/lists.dart';
+import 'package:esewa_clone/dashboard_containers/services_container.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -49,23 +50,32 @@ class LoginScreen extends StatelessWidget {
                 //Main Container having icons
                 Container(
                   padding: const EdgeInsets.only(top: 5),
-                 // color: Colors.blue,
+                  // color: Colors.blue,
                   // height: 700,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(15),
                       color: Colors.grey[900]),
-                      child: Column(
-                        children: [
-                          MainContainer(),
-                        ],
-                      ),
+                  child: Column(
+                    children: [
+                      MainContainer(),
+                    ],
+                  ),
                 ),
                 10.heightBox,
-                const AutomaticCarousel(),
+                 const AutomaticCarousel(),
+               //10.heightBox,
+                ServicesContainer(
+                  title: "Popular Services",
+                  servicesList: popServices,
+                ),
                 10.heightBox,
-                const ServicesContainer(title: "Popular Services",),
-                10.heightBox,
-                const AutomaticCarousel2(),
+                 AutomaticCarousel2(sliderList: slider,),
+               // 10.heightBox,
+                ServicesContainer(
+                  title: "Popular Services",
+                  servicesList: insurance,
+                ),
+                AutomaticCarousel2(sliderList: smallAd),
               ],
             ),
           ),
