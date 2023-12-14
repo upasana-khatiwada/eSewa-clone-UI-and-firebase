@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 
 class AutomaticCarousel2 extends StatefulWidget {
   final List<dynamic> sliderList;
-  const AutomaticCarousel2({super.key, required this.sliderList});
+  final double imageHeightPercentage;
+  final double ratio ;
+  const AutomaticCarousel2({super.key, required this.sliderList, required this.imageHeightPercentage, required this.ratio});
 
   @override
   State<AutomaticCarousel2> createState() => _AutomaticCarousel2State();
@@ -16,7 +18,7 @@ class _AutomaticCarousel2State extends State<AutomaticCarousel2> {
      final double screenHeight = MediaQuery.of(context).size.height;
 
     // Define a percentage of the screen height for the image
-    const double imageHeightPercentage = 0.3; 
+    //const double imageHeightPercentage = 0.3; 
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
@@ -34,7 +36,7 @@ class _AutomaticCarousel2State extends State<AutomaticCarousel2> {
                      widget.sliderList[index],
                     fit: BoxFit.fill,
                     width: width,
-                     height: screenHeight * imageHeightPercentage,
+                     height: screenHeight *  widget.imageHeightPercentage,
                   ),
                 ),
               )
@@ -48,7 +50,7 @@ class _AutomaticCarousel2State extends State<AutomaticCarousel2> {
           autoPlay: true,
           autoPlayInterval: const Duration(seconds: 3),
           autoPlayAnimationDuration: const Duration(milliseconds: 800),
-          aspectRatio: 2.0,
+          aspectRatio: widget.ratio,
         ),
       ),
     );

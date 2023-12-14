@@ -18,6 +18,10 @@ const termAndCond = "Terms and Conditions";
 const alreadyHaveAccount = "Already have an account? ";
  const loggedin = "Logged in successfully";
     const loggedout = "Logged out successfully";
+    const home = "Home";
+    const statement = "Statement";
+    const support = "Support";
+    const more = "More";
 
 
 //styles

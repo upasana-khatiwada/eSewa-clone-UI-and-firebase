@@ -1,7 +1,10 @@
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/images.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+import '../screens/home_screen.dart';
 
 class MyAppBar extends StatelessWidget {
   const MyAppBar({super.key});
@@ -27,8 +30,15 @@ class MyAppBar extends StatelessWidget {
             ),
           ),
         ),
-        5.widthBox,
-        "Login/Register".text.color(whiteColor).size(20).make(),
+        // 5.widthBox,
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextButton(
+            onPressed: (){
+               Get.offAll(() => const HomeScreen());
+            },
+            child: "Login/Register".text.color(whiteColor).size(20).make()),
+        ),
         15.widthBox,
     
         const Icon(

@@ -21,7 +21,7 @@ class _AutomaticCarouselState extends State<AutomaticCarousel> {
     final double screenHeight = MediaQuery.of(context).size.height;
 
     // Define a percentage of the screen height for the image
-    const double imageHeightPercentage = 0.2;
+    const double imageHeightPercentage = 0.15;
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 10.0),

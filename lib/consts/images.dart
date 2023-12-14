@@ -7,6 +7,7 @@ const  icantivirus = "assets/icons/antivirus.png";
 const  icappearance = "assets/icons/appearance.png";
 const  icappNotification = "assets/icons/appNotification.png";
 const  icatm = "assets/icons/atm.png";
+const icbell = "assets/icons/bell.png";
 const  icbadge = "assets/icons/badge.png";
 const  icBankTransfer = "assets/icons/Bank_Transfer.png";
 const  icbankTransfer = "assets/icons/bankTransfer.png";
@@ -49,6 +50,7 @@ const  icmovie = "assets/icons/movie.png";
 const  icOnlinePayment = "assets/icons/Online_Payment.png";
 const  icpayment = "assets/icons/payment.png";
 const  icprofile = "assets/icons/profile.png";
+const icpoints = "assets/icons/points.png";
 const  icRemmitance = "assets/icons/Remmitance.png";
 const  icRequestMoney = "assets/icons/Request_Money.png";
 const  icresort = "assets/icons/resort.png";
@@ -64,6 +66,9 @@ const  icunduhicon = "assets/icons/unduhicon.png";
 const  icVotingEvents = "assets/icons/Voting&Events.png";
 const  icwallet = "assets/icons/wallet.png";
 const  icwhitetick = "assets/icons/white_tick.png";
+const icstatement = "assets/icons/statement.jpg";
+const icsupport = "assets/icons/support.jpg";
+const icmore = "assets/icons/more.jpg";
 
 
 

@@ -1,10 +1,6 @@
-import 'package:esewa_clone/components/automatic_slideshow.dart';
 import 'package:esewa_clone/dashboard_containers/balance_container.dart';
-import 'package:esewa_clone/dashboard_containers/main_container.dart';
+import 'package:esewa_clone/dashboard_containers/dashboard.dart';
 import 'package:esewa_clone/dashboard_containers/my_appbar.dart';
-import 'package:esewa_clone/components/slider2.dart';
-import 'package:esewa_clone/consts/lists.dart';
-import 'package:esewa_clone/dashboard_containers/services_container.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -48,35 +44,7 @@ class LoginScreen extends StatelessWidget {
                 ),
                 10.heightBox,
                 //Main Container having icons
-                Container(
-                  padding: const EdgeInsets.only(top: 5),
-                  // color: Colors.blue,
-                  // height: 700,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Colors.grey[900]),
-                  child: Column(
-                    children: [
-                      MainContainer(),
-                    ],
-                  ),
-                ),
-                10.heightBox,
-                 const AutomaticCarousel(),
-               //10.heightBox,
-                ServicesContainer(
-                  title: "Popular Services",
-                  servicesList: popServices,
-                ),
-                10.heightBox,
-                 AutomaticCarousel2(sliderList: slider,),
-               // 10.heightBox,
-                ServicesContainer(
-                  title: "Popular Services",
-                  servicesList: insurance,
-                ),
-                AutomaticCarousel2(sliderList: smallAd),
-                //listview tile 
+                const Dashboard(),
               ],
             ),
           ),
@@ -139,6 +107,6 @@ class LoginScreen extends StatelessWidget {
 //                   ),
 //                 ),
 //               )),
-              
+
 //         ],
 //       )
