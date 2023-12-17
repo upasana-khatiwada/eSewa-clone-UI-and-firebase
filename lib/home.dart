@@ -1,6 +1,6 @@
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/images.dart';
-import 'package:esewa_clone/screens/home_screen.dart';
+import 'package:esewa_clone/screens/homescreen/home_screen.dart';
 import 'package:esewa_clone/screens/more_screen.dart';
 import 'package:esewa_clone/screens/statement_screen.dart';
 import 'package:esewa_clone/screens/support_screen.dart';
@@ -15,9 +15,9 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        //init home controller
+    //init home controller
 
-        var controller = Get.put(HomeController());
+    var controller = Get.put(HomeController());
 
     var navbarItem = [
       BottomNavigationBarItem(

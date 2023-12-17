@@ -68,7 +68,7 @@ const  icwallet = "assets/icons/wallet.png";
 const  icwhitetick = "assets/icons/white_tick.png";
 const icstatement = "assets/icons/statement.jpg";
 const icsupport = "assets/icons/support.jpg";
-const icmore = "assets/icons/more.jpg";
+const icmore = "assets/icons/more.png";
 
 
 

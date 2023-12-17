@@ -1,13 +1,14 @@
-import 'package:esewa_clone/consts/colors.dart';
-import 'package:esewa_clone/consts/images.dart';
+import 'package:esewa_clone/screens/homescreen/comonents/search_products.dart';
+import 'package:esewa_clone/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-import '../home.dart';
+import '../../consts/colors.dart';
+import '../../consts/images.dart';
 
-class MyAppBar extends StatelessWidget {
-  const MyAppBar({super.key});
+class HomeScreenAppbar extends StatelessWidget {
+  const HomeScreenAppbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,13 +35,29 @@ class MyAppBar extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: TextButton(
-            onPressed: (){
-               Get.offAll(() => const Home());
-            },
-            child: "Login/Register".text.color(whiteColor).size(20).make()),
+              onPressed: () {
+                Get.offAll(() => const ProfileScreen());
+              },
+              child: "Hi, UPASANA".text.color(whiteColor).size(16).make()),
         ),
-        15.widthBox,
-    
+        5.widthBox,
+        GestureDetector(
+          onTap: () {
+            Get.offAll(() => const SearchScreen());
+          },
+          child: const Icon(
+            Icons.search,
+            color: whiteColor,
+          ),
+        ),
+        GestureDetector(
+          onTap: () {},
+          child: const Icon(
+            Icons.notifications,
+            color: whiteColor,
+          ),
+        ),
+
         const Icon(
           Icons.more_vert,
           color: whiteColor,
