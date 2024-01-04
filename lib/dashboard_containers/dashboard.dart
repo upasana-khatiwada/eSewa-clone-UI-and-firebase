@@ -101,7 +101,7 @@ class Dashboard extends StatelessWidget {
             ),
             onPressed: () {
               // Get.offAll(() => const HomeScreen());
-              Get.offAll(() => const Home());
+              Get.offAll(() =>  const Home());
             },
             child:  Padding(
               padding: const EdgeInsets.symmetric(vertical: 18.0),

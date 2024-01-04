@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1081239481218",
+    "project_id": "esewa-clone-9c274",
+    "storage_bucket": "esewa-clone-9c274.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081239481218:android:61e96b7cf2b9a95a68bd9b",
+        "android_client_info": {
+          "package_name": "com.example.esewa_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq4_4P_N6nWm6mXdodetb3BLFAdwIzxLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

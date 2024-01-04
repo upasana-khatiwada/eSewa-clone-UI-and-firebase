@@ -15,6 +15,29 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    const snackBarDuration = Duration(seconds: 3);
+
+    const snackBar = SnackBar(
+      content: Text('Press back again to leave'),
+      duration: snackBarDuration,
+    );
+
+    DateTime? backButtonPressTime;
+
+    Future<bool> showBackDialog(BuildContext context) async {
+      final now = DateTime.now();
+      final backButtonHasNotBeenPressedOrSnackBarHasBeenClosed =
+          backButtonPressTime == null ||
+              now.difference(backButtonPressTime!) > snackBarDuration;
+
+      if (backButtonHasNotBeenPressedOrSnackBarHasBeenClosed) {
+        backButtonPressTime = now;
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+        return false;
+      }
+
+      return true;
+    }
     //init home controller
 
     var controller = Get.put(HomeController());
@@ -51,26 +74,35 @@ class Home extends StatelessWidget {
       const SupportScreen(),
       const MoreScreen(),
     ];
-    return Scaffold(
-        body: Column(
-          children: [
-            Obx(() => Expanded(
-                  child: navBody.elementAt(controller.currentNavIndex.value),
-                )),
-          ],
-        ),
-        bottomNavigationBar: Obx(
-          () => BottomNavigationBar(
-            currentIndex: controller.currentNavIndex.value,
-            selectedItemColor: backgroundGreen,
-            selectedLabelStyle: const TextStyle(fontFamily: semibold),
-            type: BottomNavigationBarType.fixed,
-            backgroundColor: whiteColor,
-            items: navbarItem,
-            onTap: (value) {
-              controller.currentNavIndex.value = value;
-            },
+    return PopScope(
+      canPop: false,
+      onPopInvoked: (bool didPop) {
+        if (didPop) {
+          return;
+        }
+        showBackDialog(context);
+      },
+      child: Scaffold(
+          body: Column(
+            children: [
+              Obx(() => Expanded(
+                    child: navBody.elementAt(controller.currentNavIndex.value),
+                  )),
+            ],
           ),
-        ));
+          bottomNavigationBar: Obx(
+            () => BottomNavigationBar(
+              currentIndex: controller.currentNavIndex.value,
+              selectedItemColor: backgroundGreen,
+              selectedLabelStyle: const TextStyle(fontFamily: semibold),
+              type: BottomNavigationBarType.fixed,
+              backgroundColor: whiteColor,
+              items: navbarItem,
+              onTap: (value) {
+                controller.currentNavIndex.value = value;
+              },
+            ),
+          )),
+    );
   }
 }

@@ -35,7 +35,7 @@ class MyAppBar extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: TextButton(
             onPressed: (){
-               Get.offAll(() => const Home());
+               Get.offAll(() =>  const Home());
             },
             child: "Login/Register".text.color(whiteColor).size(20).make()),
         ),

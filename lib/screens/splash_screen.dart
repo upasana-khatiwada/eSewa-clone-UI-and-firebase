@@ -1,7 +1,7 @@
+import 'package:esewa_clone/auth/screens/signin_screen.dart';
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/images.dart';
 import 'package:esewa_clone/consts/strings.dart';
-import 'package:esewa_clone/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //     Get.to(()=> const Home());
       //   }
       // });
-      Get.to(()=> const LoginScreen());
+      Get.to(()=> const SignInScreen());
     });
   }
     //to start or execute
