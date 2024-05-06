@@ -1,4 +1,4 @@
-import 'package:esewa_clone/screens/homescreen/comonents/search_products.dart';
+import 'package:esewa_clone/screens/homescreen/components/search_products.dart';
 import 'package:esewa_clone/screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

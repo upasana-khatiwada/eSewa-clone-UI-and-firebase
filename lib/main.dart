@@ -1,3 +1,4 @@
+import 'package:esewa_clone/auth/screens/registration_screen/signup_page.dart';
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/strings.dart';
 import 'package:esewa_clone/router.dart';
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
         //fontFamily: "sans_regular",
       ),
       onGenerateRoute: (settings) => generateRoute(settings),
-      home: const SplashScreen(),
+      home: const SignUpPage(),
     );
   }
 }

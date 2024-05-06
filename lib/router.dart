@@ -1,4 +1,4 @@
-import 'package:esewa_clone/auth/screens/signin_screen.dart';
+import 'package:esewa_clone/auth/screens/phone_signin_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'auth/screens/otp_screen.dart';
@@ -6,9 +6,9 @@ import 'components/error.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
-    case SignInScreen.routeName:
+    case PhoneSignInScreen.routeName:
       return MaterialPageRoute(
-        builder: (context) => const SignInScreen(),
+        builder: (context) => const PhoneSignInScreen(),
       );
     case OTPScreen.routeName:
       //settings.arguments = The arguments passed to this route

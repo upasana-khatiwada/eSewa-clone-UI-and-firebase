@@ -1,4 +1,4 @@
-import 'package:esewa_clone/auth/screens/signin_screen.dart';
+import 'package:esewa_clone/auth/screens/phone_signin_screen.dart';
 import 'package:esewa_clone/consts/colors.dart';
 import 'package:esewa_clone/consts/images.dart';
 import 'package:esewa_clone/consts/strings.dart';
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
       //     Get.to(()=> const Home());
       //   }
       // });
-      Get.to(()=> const SignInScreen());
+      Get.to(()=> const PhoneSignInScreen());
     });
   }
     //to start or execute

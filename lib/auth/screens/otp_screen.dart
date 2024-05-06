@@ -32,9 +32,9 @@ class _OTPScreenState extends State<OTPScreen> {
             const Text('We have sent an SMS with a code.'),
             SizedBox(
               width: size.width * 0.5,
-              child: TextField(
+              child: const TextField(
                 textAlign: TextAlign.center,
-                decoration: const InputDecoration(
+                decoration: InputDecoration(
                   hintText: '- - - - - -',
                   hintStyle: TextStyle(
                     fontSize: 30,

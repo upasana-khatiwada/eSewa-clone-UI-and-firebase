@@ -1,5 +1,5 @@
 import 'package:esewa_clone/screens/homescreen/homescreen_appbar.dart';
-import 'package:esewa_clone/screens/homescreen/comonents/show_balance.dart';
+import 'package:esewa_clone/screens/homescreen/components/show_balance.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 

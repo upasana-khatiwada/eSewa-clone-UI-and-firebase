@@ -4,15 +4,15 @@ import 'package:flutter/material.dart';
 
 import '../../components/custombutton.dart';
 
-class SignInScreen extends StatefulWidget {
+class PhoneSignInScreen extends StatefulWidget {
   static const routeName = '/signin-screen';
-  const SignInScreen({super.key});
+  const PhoneSignInScreen({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<PhoneSignInScreen> createState() => _PhoneSignInScreenState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _PhoneSignInScreenState extends State<PhoneSignInScreen> {
   final phoneController = TextEditingController();
   @override
   void dispose() {

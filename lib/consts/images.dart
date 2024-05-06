@@ -113,6 +113,8 @@ const imgVolkswagen = "assets/images/volkswagen.jpg";
 const imgWhatsapp = "assets/images/whatsapp.jpg";
 const imgeSewalogo = "assets/images/eSewaLogo.png";
 const imgeSewaLogoWhiteText = "assets/images/eSewaLogoWhiteText.png";
+const imgDashedCircle = "assets/images/dashed_circle.jpg";
+const imgSpiralCircle = "assets/images/spiral_circle.jpg";
 //logo
 const logobritishCouncil = "assets/images/britishCouncil.jpg";
 const logobusinessQrRequest = "assets/images/businessQrRequest.jpg";
